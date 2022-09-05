@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            html * {
+                line-height: 1.625;
+                color: #707070;
+                font-family: Monaco, Monospace;
+            }
+        </style>
+        <title>Thrid-eye</title>
+    </head>
+    <body>
+        <nav class="navbar" style="background-color: #e3f2fd">
+            <div class="container-fluid px-3 py-1">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img
+                        src="static/logo/images.jpg"
+                        alt=""
+                        width="150"
+                        height="100"
+                        class="d-inline-block align-text-top"
+                    />
+                    <h1 class="mx-4">Third-eye</h1>
+                </a>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row h-100">
+                <div
+                    class="col-12 col-md-6 justify-content-center d-flex align-items-center"
+                >
+                    <div class="card h-50 d-flex">
+                        <img
+                            class="h-100"
+                            id="picture"
+                            src="data:image/jpeg;base64,{{ img_data }}"
+                        />
+                    </div>
+                </div>
+                <iframe src="static/silence.mp3" allow="autoplay" id="audio" class="d-none"></iframe>
+                <div class="col-12 col-md-6 m-auto" style="text-align: center;">
+                    <div class="my-auto">
+                        <p>{{ caption }}</p>
+                        <audio id="player" autoplay controls>
+                            <source src="{{ sayit(text=caption).replace('%5C','/') }}" type="audio/mp3">
+                        </audio>
+                    </div>
+                    <hr/>
+                    <button class="btn btn-primary btn-sm btn-block" onclick="history.back()">
+                        reCaption!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
