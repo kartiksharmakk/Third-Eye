@@ -1,0 +1,9 @@
+keras
+Flask-Reuploaded
+flask
+h5py
+Pillow
+Flask-gTTS
+tensorflow
+pickle
+numpy

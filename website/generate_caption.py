@@ -6,7 +6,6 @@ from extract_features import extract_features
 import os
 import pickle
 import keras
-import pyttsx3
 
 max_length=35
 WORKING_DIR = 'working/'
