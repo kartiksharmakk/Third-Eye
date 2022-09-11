@@ -26,6 +26,7 @@ https://user-images.githubusercontent.com/77577353/188488874-3771d85f-7996-4183-
 - This Dataset was used in generation of RNN(LSTM) model for this project(https://www.kaggle.com/datasets/adityajn105/flickr8k) 
 - CNN (VGG-16) Model extracts features from images
 - RNN (LSTM) Model gives final caption output based on features
+- The training jupyter notebook and model files can be downloaded from (https://drive.google.com/file/d/1-P5NVywbdFcT5XCCxSS1RsDtGiZflblF/view?usp=sharing)
 
 ## Model 
 - Custom RNN(LSTM) Model Visualized
